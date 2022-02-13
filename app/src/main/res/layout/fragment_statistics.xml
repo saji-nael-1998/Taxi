@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/light_black"
+    tools:context=".view.StatisticsFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/card_shap"
+            android:elevation="15dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+
+            android:paddingVertical="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/yellow_card_template"
+                android:gravity="center"
+                android:padding="10dp">
+
+                <ImageView
+
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/logo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <Button
+                    android:id="@+id/select_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="select date" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/no_data"
+            android:layout_marginTop="200dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="NO data"
+            android:textSize="24dp"
+            android:textColor="@color/light_gray"
+            android:gravity="center"/>
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/result_box"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Date"
+                android:layout_marginVertical="3dp"
+                android:layout_marginHorizontal="10dp"
+                android:textColorHint="#636363"
+                app:startIconDrawable="@drawable/ic_baseline_calendar_month_24"
+                app:startIconTint="@color/white">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/black"
+                    android:editable="false"
+                    android:focusable="true"
+                    android:text="number"
+                    android:textColor="@color/white" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/plate_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Taxi"
+                android:layout_marginVertical="3dp"
+
+                android:textColorHint="#636363"
+                app:startIconDrawable="@drawable/ic_baseline_local_taxi_24"
+                app:startIconTint="@color/white">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/black"
+                    android:layout_marginHorizontal="10dp"
+                    android:editable="false"
+                    android:focusable="true"
+                    android:text="number"
+                    android:textColor="@color/white" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/startTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Start Time"
+                android:layout_marginVertical="3dp"
+
+                android:textColorHint="#636363"
+                app:startIconDrawable="@drawable/ic_baseline_access_time_24"
+                app:startIconTint="@color/white">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/black"
+                    android:layout_marginHorizontal="10dp"
+                    android:editable="false"
+                    android:focusable="true"
+                    android:text="number"
+                    android:textColor="@color/white" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/endTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="End Time"
+                android:layout_marginVertical="3dp"
+
+                android:textColorHint="#636363"
+                app:startIconDrawable="@drawable/ic_baseline_directions_run_24"
+                app:startIconTint="@color/white">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/black"
+                    android:layout_marginHorizontal="10dp"
+                    android:editable="false"
+                    android:focusable="true"
+                    android:text="number"
+                    android:textColor="@color/white" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <LinearLayout
+                android:layout_marginHorizontal="10dp"
+                android:background="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="5dp"
+                    android:text="History"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/totalTrip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="21dp"
+                    android:text="Total trips: 0"
+                    android:textColor="#9E9B9B"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="10dp"
+                    android:background="@color/light_gray" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/history"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:padding="2dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

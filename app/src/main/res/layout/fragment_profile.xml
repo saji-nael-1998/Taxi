@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.ProfileFragment"
+    android:background="@color/light_black"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#D19000"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profile_photo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="70dp"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
+
+        <TextView
+            android:id="@+id/driver_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Driver Name"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/driver_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Driver Location"
+            android:textAlignment="center"
+            android:textColor="@color/light_black"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textColorHint="#C8C7C7"
+            app:boxBackgroundColor="#3E3E3E"
+            app:endIconTint="@color/white"
+            app:errorEnabled="true"
+            app:startIconDrawable="@drawable/ic_baseline_mail_24"
+            app:startIconTint="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:focusable="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:text="Driver email "
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone NO"
+            android:textColorHint="#C8C7C7"
+            app:boxBackgroundColor="#3E3E3E"
+            app:endIconTint="@color/white"
+            app:errorEnabled="true"
+            app:startIconDrawable="@android:drawable/stat_sys_phone_call"
+            app:startIconTint="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:text="Driver Phone "
+                android:focusable="false"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/birthdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Birthdate"
+            android:textColorHint="#C8C7C7"
+            app:boxBackgroundColor="#3E3E3E"
+            app:endIconTint="@color/white"
+            app:errorEnabled="true"
+            app:startIconDrawable="@drawable/ic_baseline_calendar_month_24"
+            app:startIconTint="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:text="Driver Birthdate "
+                android:focusable="false"
+
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/driver_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Driver ID"
+
+
+            android:textColorHint="#C8C7C7"
+
+            app:boxBackgroundColor="#3E3E3E"
+            app:endIconTint="@color/white"
+            app:errorEnabled="true"
+
+            app:startIconDrawable="@drawable/ic_baseline_person_24"
+            app:startIconTint="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:focusable="false"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:text="Driver Birthdate "
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:hint="CHANGE PASSWORD"
+            android:onClick="changePasswordBTN"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</LinearLayout>

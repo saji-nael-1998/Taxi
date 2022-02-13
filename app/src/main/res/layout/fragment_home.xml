@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_black"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ui.home.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/card_shap"
+        android:elevation="15dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+
+        android:paddingVertical="0dp">
+        <LinearLayout
+            android:background="@drawable/yellow_card_template"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+            <ImageView
+
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/logo"/>
+        </LinearLayout>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical"
+          android:padding="10dp">
+          <com.google.android.material.textfield.TextInputLayout
+              android:id="@+id/park_name"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:hint="PARK NAME"
+              android:layout_marginVertical="3dp"
+              android:textColorHint="#636363"
+              app:startIconDrawable="@drawable/ic_baseline_local_parking_24"
+              app:startIconTint="@color/white">
+
+              <com.google.android.material.textfield.TextInputEditText
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:backgroundTint="@color/light_black"
+                  android:editable="false"
+                  android:focusable="true"
+                  android:text="number"
+                  android:textColor="@color/white" />
+
+          </com.google.android.material.textfield.TextInputLayout>
+          <com.google.android.material.textfield.TextInputLayout
+              android:id="@+id/park_location"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:hint="PARK LOCATION"
+              android:layout_marginVertical="3dp"
+
+              android:textColorHint="#636363"
+              app:startIconDrawable="@drawable/ic_baseline_location_on_24"
+              app:startIconTint="@color/white">
+
+              <com.google.android.material.textfield.TextInputEditText
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:backgroundTint="@color/light_black"
+                  android:editable="false"
+                  android:focusable="true"
+                  android:text="number"
+                  android:textColor="@color/white" />
+
+          </com.google.android.material.textfield.TextInputLayout>
+          <com.google.android.material.textfield.TextInputLayout
+              android:id="@+id/plate_no"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:hint="Plate NO"
+              android:layout_marginVertical="3dp"
+
+              android:textColorHint="#636363"
+              app:startIconDrawable="@drawable/ic_baseline_local_taxi_24"
+              app:startIconTint="@color/white">
+
+              <com.google.android.material.textfield.TextInputEditText
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:backgroundTint="@color/light_black"
+                  android:editable="false"
+                  android:focusable="true"
+                  android:text="number"
+                  android:textColor="@color/white" />
+
+          </com.google.android.material.textfield.TextInputLayout>
+          <com.google.android.material.textfield.TextInputLayout
+              android:id="@+id/registration_date"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:hint="REGISTRATION DATE"
+              android:layout_marginVertical="3dp"
+
+              android:textColorHint="#636363"
+              app:startIconDrawable="@drawable/ic_baseline_calendar_month_24"
+              app:startIconTint="@color/white">
+
+              <com.google.android.material.textfield.TextInputEditText
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:backgroundTint="@color/light_black"
+                  android:editable="false"
+                  android:focusable="true"
+                  android:text="number"
+                  android:textColor="@color/white" />
+
+          </com.google.android.material.textfield.TextInputLayout>
+          <com.google.android.material.textfield.TextInputLayout
+              android:id="@+id/route"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:hint="ROUTE"
+              android:layout_marginVertical="3dp"
+
+              android:textColorHint="#636363"
+              app:startIconDrawable="@drawable/ic_baseline_my_location_24"
+              app:startIconTint="@color/white">
+
+              <com.google.android.material.textfield.TextInputEditText
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:backgroundTint="@color/light_black"
+                  android:editable="false"
+                  android:focusable="true"
+                  android:text="number"
+                  android:textColor="@color/white" />
+
+          </com.google.android.material.textfield.TextInputLayout>
+
+          <Button
+              android:id="@+id/start_workday"
+              android:layout_width="match_parent"
+              android:layout_height="60dp"
+              android:text="start workday"
+              android:textSize="14dp"
+              android:layout_marginTop="10dp"
+              android:textStyle="bold" />
+      </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

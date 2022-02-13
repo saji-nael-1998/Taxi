@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_black"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingHorizontal="20dp"
+    tools:context=".view.TripFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/card_shap"
+        android:elevation="15dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+
+        android:paddingVertical="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/yellow_card_template"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <ImageView
+
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/logo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/route"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="3dp"
+                android:hint="PICK UP"
+
+                android:textColorHint="#636363"
+                app:startIconDrawable="@drawable/ic_baseline_my_location_24"
+                app:startIconTint="@color/white">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/light_black"
+                    android:editable="false"
+                    android:focusable="true"
+
+                    android:textColor="@color/white" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/dest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="3dp"
+                android:hint="DROP OFF"
+
+                android:textColorHint="#636363"
+                app:startIconDrawable="@drawable/ic_baseline_location_on_24"
+                app:startIconTint="@color/white">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/light_black"
+                    android:editable="false"
+                    android:focusable="true"
+
+                    android:textColor="@color/white" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <ToggleButton
+                    android:id="@+id/in_park_TB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textOff="Out"
+                    android:textOn="In"
+                    android:checked="true"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"/>
+                <ToggleButton
+                    android:id="@+id/current_dest_TB"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:id="@+id/end_trip"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:backgroundTint="#A62128"
+                    android:text="END" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="20dp">
+
+                <LinearLayout
+                    android:layout_width="180dp"
+                    android:layout_height="80dp"
+                    android:layout_marginRight="10dp"
+                    android:elevation="20dp"
+                    android:gravity="center"
+                    android:paddingHorizontal="20dp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/ic_baseline_person_24"
+                        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="20dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Rider"
+                            android:textColor="@color/white"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/rider"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:text="0"
+
+                            android:textColor="@color/white"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="180dp"
+                    android:layout_height="80dp"
+                    android:layout_marginRight="10dp"
+                    android:elevation="20dp"
+                    android:gravity="center"
+                    android:paddingHorizontal="20dp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/ic_baseline_people_24"
+                        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="20dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Total"
+                            android:textColor="@color/white"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/totalRider"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:text="0"
+
+                            android:textColor="@color/white"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/increase_rider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#006100"
+                    android:text="+"
+                    android:textSize="26dp" />
+
+                <Button
+                    android:id="@+id/decrease_rider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#A62128"
+                    android:text="-"
+                    android:textSize="26dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
